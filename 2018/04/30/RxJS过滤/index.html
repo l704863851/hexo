@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="https://l704863851.github.io/hexo/index.html">
+<meta name="description" content="auditaudit(durationSelector: (value) =&amp;gt; Observable | Promise): Observable根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值示例12var clicks = Rx.Observable.fromEvent(document, &amp;apos;click&amp;apos;)clicks.audit(() =&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RxJS过滤">
+<meta property="og:url" content="https://l704863851.github.io/hexo/2018/04/30/RxJS过滤/index.html">
 <meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="auditaudit(durationSelector: (value) =&amp;gt; Observable | Promise): Observable根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值示例12var clicks = Rx.Observable.fromEvent(document, &amp;apos;click&amp;apos;)clicks.audit(() =&amp;">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-04-30T15:47:38.816Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的博客">
+<meta name="twitter:title" content="RxJS过滤">
+<meta name="twitter:description" content="auditaudit(durationSelector: (value) =&amp;gt; Observable | Promise): Observable根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值示例12var clicks = Rx.Observable.fromEvent(document, &amp;apos;click&amp;apos;)clicks.audit(() =&amp;">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://l704863851.github.io/hexo/"/>
+  <link rel="canonical" href="https://l704863851.github.io/hexo/2018/04/30/RxJS过滤/"/>
 
 
 
 
 
-  <title>我的博客</title>
+  <title>RxJS过滤 | 我的博客</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +237,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/hexo/2018/04/30/RxJS过滤/" itemprop="url">RxJS过滤</a></h1>
+          <h1 class="post-title" itemprop="name headline">RxJS过滤</h1>
         
 
         <div class="post-meta">
@@ -318,9 +319,7 @@
       
 
       
-        
-          
-            <h1 id="audit"><a href="#audit" class="headerlink" title="audit"></a>audit</h1><h4 id="audit-durationSelector-value-gt-Observable-Promise-Observable"><a href="#audit-durationSelector-value-gt-Observable-Promise-Observable" class="headerlink" title="audit(durationSelector: (value) =&gt; Observable | Promise): Observable"></a>audit(durationSelector: (value) =&gt; Observable | Promise): Observable</h4><h2 id="根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值"><a href="#根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值" class="headerlink" title="根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值"></a>根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值</h2><h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var clicks = Rx.Observable.fromEvent(document, &apos;click&apos;)</span><br><span class="line">clicks.audit(() =&gt; 1000)</span><br></pre></td></tr></table></figure>
+        <h1 id="audit"><a href="#audit" class="headerlink" title="audit"></a>audit</h1><h4 id="audit-durationSelector-value-gt-Observable-Promise-Observable"><a href="#audit-durationSelector-value-gt-Observable-Promise-Observable" class="headerlink" title="audit(durationSelector: (value) =&gt; Observable | Promise): Observable"></a>audit(durationSelector: (value) =&gt; Observable | Promise): Observable</h4><h2 id="根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值"><a href="#根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值" class="headerlink" title="根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值"></a>根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值</h2><h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var clicks = Rx.Observable.fromEvent(document, &apos;click&apos;)</span><br><span class="line">clicks.audit(() =&gt; 1000)</span><br></pre></td></tr></table></figure>
 <h1 id="auditTime"><a href="#auditTime" class="headerlink" title="auditTime"></a>auditTime</h1><h4 id="函数签名-audit-duration-number-scheduler-Scheduler-Observable"><a href="#函数签名-audit-duration-number-scheduler-Scheduler-Observable" class="headerlink" title="函数签名: audit(duration: number, scheduler?: Scheduler): Observable"></a>函数签名: audit(duration: number, scheduler?: Scheduler): Observable</h4><h2 id="根据提供的给定的时间来忽略某一段时间内的数据，时间到后发出最新值"><a href="#根据提供的给定的时间来忽略某一段时间内的数据，时间到后发出最新值" class="headerlink" title="根据提供的给定的时间来忽略某一段时间内的数据，时间到后发出最新值"></a>根据提供的给定的时间来忽略某一段时间内的数据，时间到后发出最新值</h2><h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var clicks = Rx.Observable.fromEvent(document, &apos;click)</span><br><span class="line">clicks.auditTime(1000)</span><br></pre></td></tr></table></figure>
 <h1 id="debounce"><a href="#debounce" class="headerlink" title="debounce"></a>debounce</h1><h4 id="函数签名-debounce-durationSelector-function-Observable"><a href="#函数签名-debounce-durationSelector-function-Observable" class="headerlink" title="函数签名: debounce(durationSelector: function): Observable"></a>函数签名: debounce(durationSelector: function): Observable</h4><h2 id="根据一个选择器函数，舍弃在二次输出之间小于制定时间的发出值"><a href="#根据一个选择器函数，舍弃在二次输出之间小于制定时间的发出值" class="headerlink" title="根据一个选择器函数，舍弃在二次输出之间小于制定时间的发出值"></a>根据一个选择器函数，舍弃在二次输出之间小于制定时间的发出值</h2><ul>
 <li>意思就是一次输出和后一次输出如果小于指定的时间，那就舍弃掉，如果大于或等于指定时间返回最新值 *<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import &#123; interval &#125; from &apos;rxjs/observable/interval&apos;;</span><br><span class="line">import &#123; timer &#125; from &apos;rxjs/observable/timer&apos;;</span><br><span class="line">import &#123; debounce &#125; from &apos;rxjs/operators&apos;;</span><br><span class="line"></span><br><span class="line">const intervals = interval(1000)</span><br><span class="line">const debouncedInterval = interval.pipe(debounce(val =&gt; timer(val * 200)))</span><br><span class="line">//第一次循环返回时间：0 * 200</span><br><span class="line">//第二次循环返回时间：1 * 200</span><br><span class="line">//第三次循环返回时间：2 * 200</span><br><span class="line">//第四次循环返回时间：3 * 200</span><br><span class="line">//第五次循环返回时间：4 * 200</span><br><span class="line">//第六次循环返回时间：5 * 200</span><br><span class="line">//第七次循环返回时间：6 * 200 == 1200</span><br><span class="line">//intervals每隔一秒就会更新值，所以在返回的特定时间里面更新值，永远无法返回</span><br><span class="line">const subscribe = debouncedInterval.subscribe(val =&gt; console.log(val))</span><br></pre></td></tr></table></figure>
@@ -350,8 +349,6 @@
 <li>如果通过断言不是单一则会报错 *<h3 id="示例-6"><a href="#示例-6" class="headerlink" title="示例"></a>示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import &#123; from &#125; from &apos;rxjs/observable/from&apos;;</span><br><span class="line">import &#123; single &#125; from &apos;rxjs/operators&apos;;</span><br><span class="line">//发出(1,2,3,4,5)</span><br><span class="line">const source = from([1,2,3,4,5])</span><br><span class="line">//发出匹配断言函数的一项</span><br><span class="line">const example = source.pip(single(val =&gt; val ===3)</span><br><span class="line">//输出：4</span><br><span class="line">const subscribe = example.subscribe(val =&gt; console.log(val))</span><br></pre></td></tr></table></figure></li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -368,141 +365,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://l704863851.github.io/hexo/hexo/2018/04/30/lodash笔记二-array/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="罗川晶">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/hexo/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/hexo/2018/04/30/lodash笔记二-array/" itemprop="url">lodash笔记二(array)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-30T16:06:44+08:00">
-                2018-04-30
-              </time>
+              <a href="/hexo/2018/04/30/lodash笔记二-array/" rel="next" title="lodash笔记二(array)">
+                <i class="fa fa-chevron-left"></i> lodash笔记二(array)
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>#drop</p>
-<p>##解释：裁剪数组中前N个数组，返回剩余部分</p>
-<p>###参数一(Array)：需要处理的数组</p>
-<p>###参数二(n=1:Number)：裁剪的个数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">示例：</span><br><span class="line">_.drop([1,2,3])</span><br><span class="line">// =&gt; [2,3]</span><br><span class="line"></span><br><span class="line">_.drop([1,2,3],2)</span><br><span class="line">// =&gt; [3]</span><br><span class="line"></span><br><span class="line">_.drop([1,2,3], 5]);</span><br><span class="line">// =&gt; []</span><br><span class="line"></span><br><span class="line">_.drop([1,2,3],0)</span><br><span class="line">// =&gt; [1,2,3]</span><br></pre></td></tr></table></figure></p>
-<p>#dropRight</p>
-<p>##解释：同drop唯一区别，从右边开始裁剪数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">_.dropRight([1, 2, 3]);</span><br><span class="line">// =&gt; [1, 2]</span><br><span class="line"></span><br><span class="line">_.dropRight([1, 2, 3], 2);</span><br><span class="line">// =&gt; [1]</span><br><span class="line"></span><br><span class="line">_.dropRight([1, 2, 3], 5);</span><br><span class="line">// =&gt; []</span><br><span class="line"></span><br><span class="line">_.dropRight([1, 2, 3], 0);</span><br><span class="line">// =&gt; [1, 2, 3]</span><br></pre></td></tr></table></figure></p>
-<h1 id="dropWhile"><a href="#dropWhile" class="headerlink" title="dropWhile"></a>dropWhile</h1><h2 id="解释：裁剪数组，起点从predicate返回假值开始-从返回false开始截取-。predicate会传入三个参数-value-index-array"><a href="#解释：裁剪数组，起点从predicate返回假值开始-从返回false开始截取-。predicate会传入三个参数-value-index-array" class="headerlink" title="解释：裁剪数组，起点从predicate返回假值开始(从返回false开始截取)。predicate会传入三个参数(value,index,array)"></a>解释：裁剪数组，起点从predicate返回假值开始(从返回false开始截取)。predicate会传入三个参数(value,index,array)</h2><h3 id="参数："><a href="#参数：" class="headerlink" title="参数："></a>参数：</h3><pre><code>1.array(Array)需要处理的数组
-2.[predicate=_.identity](Function|Object|String)函数每次迭代调用
-</code></pre><h3 id="返回值："><a href="#返回值：" class="headerlink" title="返回值："></a>返回值：</h3><pre><code>return this slice of array
-</code></pre><h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">var users = [</span><br><span class="line">  &#123; &apos;user&apos;: &apos;barney&apos;,  &apos;active&apos;: false &#125;,</span><br><span class="line">  &#123; &apos;user&apos;: &apos;fred&apos;,    &apos;active&apos;: false &#125;,</span><br><span class="line">  &#123; &apos;user&apos;: &apos;pebbles&apos;, &apos;active&apos;: true &#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">_.dropWhile(users, function(o) &#123; return !o.active; &#125;);</span><br><span class="line">// =&gt; 结果: [&#123; &apos;user&apos;: &apos;pebbles&apos;, &apos;active&apos;: true &#125;]</span><br><span class="line"></span><br><span class="line">// 使用了 `_.matches` 的回调处理</span><br><span class="line">_.dropWhile(users, &#123; &apos;user&apos;: &apos;barney&apos;, &apos;active&apos;: false &#125;);</span><br><span class="line">// =&gt; 结果: [&#123; &apos;user&apos;: &apos;fred&apos;,    &apos;active&apos;: false &#125;, &#123; &apos;user&apos;: &apos;pebbles&apos;, &apos;active&apos;: true &#125;]</span><br><span class="line"></span><br><span class="line">// 使用了 `_.matchesProperty` 的回调处理</span><br><span class="line">_.dropWhile(users, [&apos;active&apos;, false]);</span><br><span class="line">// =&gt; 结果: [&#123; &apos;user&apos;: &apos;pebbles&apos;, &apos;active&apos;: true &#125;]</span><br><span class="line"></span><br><span class="line">// 使用了 `_.property` 的回调处理</span><br><span class="line">_.dropWhile(users, &apos;active&apos;);</span><br><span class="line">// =&gt; 结果: [&#123; &apos;user&apos;: &apos;barney&apos;,  &apos;active&apos;: false &#125;,&#123; &apos;user&apos;: &apos;fred&apos;,    &apos;active&apos;: false &#125;,&#123; &apos;user&apos;: &apos;pebbles&apos;, &apos;active&apos;: true &#125;]</span><br></pre></td></tr></table></figure>
-<h1 id="dropRightWhile"><a href="#dropRightWhile" class="headerlink" title="dropRightWhile"></a>dropRightWhile</h1><h2 id="解释：同dropWhite唯一区别，从右边开始裁剪数组"><a href="#解释：同dropWhite唯一区别，从右边开始裁剪数组" class="headerlink" title="解释：同dropWhite唯一区别，从右边开始裁剪数组"></a>解释：同dropWhite唯一区别，从右边开始裁剪数组</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">var resolve = _.partial(_.map, _, &apos;user&apos;);</span><br><span class="line"></span><br><span class="line">var users = [</span><br><span class="line">  &#123; &apos;user&apos;: &apos;barney&apos;,  &apos;active&apos;: true &#125;,</span><br><span class="line">  &#123; &apos;user&apos;: &apos;fred&apos;,    &apos;active&apos;: false &#125;,</span><br><span class="line">  &#123; &apos;user&apos;: &apos;pebbles&apos;, &apos;active&apos;: false &#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">resolve( _.dropRightWhile(users, function(o) &#123; return !o.active; &#125;) );</span><br><span class="line">// =&gt; [&apos;barney&apos;]</span><br><span class="line"></span><br><span class="line">// 使用了 `_.matches` 的回调结果</span><br><span class="line">resolve( _.dropRightWhile(users, &#123; &apos;user&apos;: &apos;pebbles&apos;, &apos;active&apos;: false &#125;) );</span><br><span class="line">// =&gt; [&apos;barney&apos;, &apos;fred&apos;]</span><br><span class="line"></span><br><span class="line">// 使用了 `_.matchesProperty` 的回调结果</span><br><span class="line">resolve( _.dropRightWhile(users, [&apos;active&apos;, false]) );</span><br><span class="line">// =&gt; [&apos;barney&apos;]</span><br><span class="line"></span><br><span class="line">// 使用了 `_.property` 的回调结果</span><br><span class="line">resolve( _.dropRightWhile(users, &apos;active&apos;) );</span><br><span class="line">// =&gt; [&apos;barney&apos;, &apos;fred&apos;, &apos;pebbles&apos;]</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -512,135 +396,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://l704863851.github.io/hexo/hexo/2018/04/02/lodash笔记一(array)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="罗川晶">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/hexo/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/hexo/2018/04/02/lodash笔记一(array)/" itemprop="url">lodash(array)笔记一</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-02T21:46:25+08:00">
-                2018-04-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="chunk"><a href="#chunk" class="headerlink" title="chunk"></a>chunk</h1><h2 id="解释：将数组拆分，指定为参数二提供的数组长度，不能拆分为等长时，剩余元素组成一个数组"><a href="#解释：将数组拆分，指定为参数二提供的数组长度，不能拆分为等长时，剩余元素组成一个数组" class="headerlink" title="解释：将数组拆分，指定为参数二提供的数组长度，不能拆分为等长时，剩余元素组成一个数组"></a>解释：将数组拆分，指定为参数二提供的数组长度，不能拆分为等长时，剩余元素组成一个数组</h2><h3 id="参数一-Array-：被处理的数组"><a href="#参数一-Array-：被处理的数组" class="headerlink" title="参数一(Array)：被处理的数组"></a>参数一(Array)：被处理的数组</h3><h3 id="参数二-Number-：每一个快的长度"><a href="#参数二-Number-：每一个快的长度" class="headerlink" title="参数二(Number)：每一个快的长度"></a>参数二(Number)：每一个快的长度</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">示例：</span><br><span class="line">_.chunk([1,2,3,4,5,6,7,8,9],4)</span><br><span class="line">结果：</span><br><span class="line">// =&gt; [[1,2,3,4],[5,6,7,8],[9]]</span><br></pre></td></tr></table></figure>
-<h1 id="compact"><a href="#compact" class="headerlink" title="compact"></a>compact</h1><h2 id="解释：创建一个移除所有数组假值的新数组，假值包括：false、null、0、””、undefined和NaN"><a href="#解释：创建一个移除所有数组假值的新数组，假值包括：false、null、0、””、undefined和NaN" class="headerlink" title="解释：创建一个移除所有数组假值的新数组，假值包括：false、null、0、””、undefined和NaN"></a>解释：创建一个移除所有数组假值的新数组，假值包括：false、null、0、””、undefined和NaN</h2><h3 id="参数唯一-Array-：需要被处理的数组"><a href="#参数唯一-Array-：需要被处理的数组" class="headerlink" title="参数唯一(Array)：需要被处理的数组"></a>参数唯一(Array)：需要被处理的数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">示例：</span><br><span class="line">_.compact([0,1,true,false,null,undefined,NaN)</span><br><span class="line">结果：</span><br><span class="line">// =&gt; [1,true]</span><br></pre></td></tr></table></figure>
-<h1 id="concat"><a href="#concat" class="headerlink" title="concat"></a>concat</h1><h2 id="解释：创建一个用任何数组或者值连接的新数组"><a href="#解释：创建一个用任何数组或者值连接的新数组" class="headerlink" title="解释：创建一个用任何数组或者值连接的新数组"></a>解释：创建一个用任何数组或者值连接的新数组</h2><h3 id="参数一-Array-：需要被连接的数组"><a href="#参数一-Array-：需要被连接的数组" class="headerlink" title="参数一(Array)：需要被连接的数组"></a>参数一(Array)：需要被连接的数组</h3><h3 id="参数val…：如果为值直接连接，如果为数组，把数组内的值连接"><a href="#参数val…：如果为值直接连接，如果为数组，把数组内的值连接" class="headerlink" title="参数val…：如果为值直接连接，如果为数组，把数组内的值连接"></a>参数<a href="ary">val…</a>：如果为值直接连接，如果为数组，把数组内的值连接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">示例：</span><br><span class="line">_.concat([1,2,3],4,[5,6],&#123;a:7&#125;,true,false,[[8,9]])</span><br><span class="line">结果：</span><br><span class="line">// =&gt; [1,2,3,4,5,6,&#123;a:7&#125;,true,false,[8,9]]</span><br></pre></td></tr></table></figure>
-<h1 id="difference"><a href="#difference" class="headerlink" title="difference"></a>difference</h1><h2 id="解释：创建一个差异化后的数组，不包括SameValueZero方法提供的数组"><a href="#解释：创建一个差异化后的数组，不包括SameValueZero方法提供的数组" class="headerlink" title="解释：创建一个差异化后的数组，不包括SameValueZero方法提供的数组"></a>解释：创建一个差异化后的数组，不包括SameValueZero方法提供的数组</h2><h3 id="参数一-Array-：需要处理的数组"><a href="#参数一-Array-：需要处理的数组" class="headerlink" title="参数一(Array)：需要处理的数组"></a>参数一(Array)：需要处理的数组</h3><h3 id="参数二-Array-：对比数组中和参数一数组相同的值"><a href="#参数二-Array-：对比数组中和参数一数组相同的值" class="headerlink" title="参数二(Array)：对比数组中和参数一数组相同的值"></a>参数二(Array)：对比数组中和参数一数组相同的值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">示例：</span><br><span class="line">_.difference([1,2,3,4,5],[2,3])</span><br><span class="line">结果：</span><br><span class="line">// =&gt; [1,4,5]</span><br><span class="line">*注意：如果比较的是引用类型，必须指向同一个*</span><br></pre></td></tr></table></figure>
-<p>#differenceBy</p>
-<h2 id="解释：方法类似-difference-除了接收第三个参数iteratee调用每一个数组和值-iteratee会传入一个参数"><a href="#解释：方法类似-difference-除了接收第三个参数iteratee调用每一个数组和值-iteratee会传入一个参数" class="headerlink" title="解释：方法类似_.difference,除了接收第三个参数iteratee调用每一个数组和值,iteratee会传入一个参数"></a>解释：方法类似_.difference,除了接收第三个参数iteratee调用每一个数组和值,iteratee会传入一个参数</h2><h3 id="参数一-Array-：需要处理的数组-1"><a href="#参数一-Array-：需要处理的数组-1" class="headerlink" title="参数一(Array)：需要处理的数组"></a>参数一(Array)：需要处理的数组</h3><h3 id="参数二-Array-：用来对比差异的数组"><a href="#参数二-Array-：用来对比差异的数组" class="headerlink" title="参数二(Array)：用来对比差异的数组"></a>参数二(Array)：用来对比差异的数组</h3><h3 id="参数三-Function-Object-String-：函数处理每一个元素"><a href="#参数三-Function-Object-String-：函数处理每一个元素" class="headerlink" title="参数三(Function|Object|String)：函数处理每一个元素"></a>参数三(Function|Object|String)：函数处理每一个元素</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">示例一：</span><br><span class="line">_.differenceBy([3.1, 2.2, 1.3], [4.4,2.5], Math.floor)</span><br><span class="line">结果：</span><br><span class="line">// =&gt; [3.1,1.3]</span><br><span class="line">================</span><br><span class="line">示例二：</span><br><span class="line">_differenceBy([&#123;&apos;x&apos;:2&#125;,&#123;&apos;x&apos;:1&#125;],[&#123;&apos;x&apos;:1&#125;],&apos;x&apos;)</span><br><span class="line">结果：</span><br><span class="line">// =&gt; [&#123;&apos;x&apos;: 2&#125;]</span><br></pre></td></tr></table></figure>
-<h1 id="differenceWith"><a href="#differenceWith" class="headerlink" title="differenceWith"></a>differenceWith</h1><h2 id="方法类似-difference，除了接受一个comparator调用每一个数组元素的值comparator接受2个参数-arrVal-othVal"><a href="#方法类似-difference，除了接受一个comparator调用每一个数组元素的值comparator接受2个参数-arrVal-othVal" class="headerlink" title="方法类似_.difference，除了接受一个comparator调用每一个数组元素的值comparator接受2个参数(arrVal,othVal)"></a>方法类似_.difference，除了接受一个comparator调用每一个数组元素的值comparator接受2个参数(arrVal,othVal)</h2><h3 id="参数一-Array-：需要处理的数组-2"><a href="#参数一-Array-：需要处理的数组-2" class="headerlink" title="参数一(Array)：需要处理的数组"></a>参数一(Array)：需要处理的数组</h3><h3 id="参数二-Array-：用于对比差异的数组"><a href="#参数二-Array-：用于对比差异的数组" class="headerlink" title="参数二(Array)：用于对比差异的数组"></a>参数二(Array)：用于对比差异的数组</h3><h3 id="参数三-Function-：这个函数会处理每一个元素"><a href="#参数三-Function-：这个函数会处理每一个元素" class="headerlink" title="参数三(Function)：这个函数会处理每一个元素"></a>参数三(Function)：这个函数会处理每一个元素</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">示例：</span><br><span class="line">var objects = [&#123;&apos;x&apos;:1,&apos;y&apos;:2&#125;,&#123;&apos;x&apos;:2,&apos;y&apos;:1&#125;]</span><br><span class="line">_differenceWith(objects,[&#123;&apos;x&apos;:1,&apos;y&apos;:2&#125;], _.isEqual)</span><br><span class="line">结果：</span><br><span class="line">// =&gt; [&#123;&apos;x&apos;: 2, &apos;y&apos;: 1&#125;]</span><br><span class="line">*_.isEqual用来深层次比较二个值*</span><br></pre></td></tr></table></figure>
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -648,6 +408,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -668,8 +432,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -711,6 +484,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#audit"><span class="nav-number">1.</span> <span class="nav-text">audit</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#audit-durationSelector-value-gt-Observable-Promise-Observable"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">audit(durationSelector: (value) =&gt; Observable | Promise): Observable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值"><span class="nav-number">1.1.</span> <span class="nav-text">根据提供的Observable来忽略某一段时间内的数据，时间到后发出最新值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number">1.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#auditTime"><span class="nav-number">2.</span> <span class="nav-text">auditTime</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-audit-duration-number-scheduler-Scheduler-Observable"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">函数签名: audit(duration: number, scheduler?: Scheduler): Observable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据提供的给定的时间来忽略某一段时间内的数据，时间到后发出最新值"><span class="nav-number">2.1.</span> <span class="nav-text">根据提供的给定的时间来忽略某一段时间内的数据，时间到后发出最新值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例-1"><span class="nav-number">2.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#debounce"><span class="nav-number">3.</span> <span class="nav-text">debounce</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-debounce-durationSelector-function-Observable"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">函数签名: debounce(durationSelector: function): Observable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据一个选择器函数，舍弃在二次输出之间小于制定时间的发出值"><span class="nav-number">3.1.</span> <span class="nav-text">根据一个选择器函数，舍弃在二次输出之间小于制定时间的发出值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例-2"><span class="nav-number">3.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#debounceTime"><span class="nav-number">4.</span> <span class="nav-text">debounceTime</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-debounceTime-dueTime-number-scheduler-Scheduler-Observable"><span class="nav-number">4.0.0.1.</span> <span class="nav-text">函数签名: debounceTime(dueTime: number, scheduler: Scheduler): Observable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#舍弃掉在两次输出之间小于指定时间的发出值"><span class="nav-number">4.1.</span> <span class="nav-text">舍弃掉在两次输出之间小于指定时间的发出值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例-3"><span class="nav-number">4.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#distinctUntilChanged"><span class="nav-number">5.</span> <span class="nav-text">distinctUntilChanged</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-distinctUntilChanged-compare-function-Observable"><span class="nav-number">5.0.0.1.</span> <span class="nav-text">函数签名: distinctUntilChanged(compare: function): Observable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#只有当当前值与之前最后一个值不同时才将其发出"><span class="nav-number">5.1.</span> <span class="nav-text">只有当当前值与之前最后一个值不同时才将其发出</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例-4"><span class="nav-number">5.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#filter"><span class="nav-number">6.</span> <span class="nav-text">filter</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-filter-select-Function-thisArg-any-Observable"><span class="nav-number">6.0.0.1.</span> <span class="nav-text">函数签名: filter(select: Function, thisArg: any): Observable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发出符合给定条件的值"><span class="nav-number">6.1.</span> <span class="nav-text">发出符合给定条件的值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例-5"><span class="nav-number">6.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#first"><span class="nav-number">7.</span> <span class="nav-text">first</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-first-predicate-function-select-function"><span class="nav-number">7.0.0.1.</span> <span class="nav-text">函数签名: first(predicate: function, select: function)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发出第一个值或第一个通过给定表达式的值"><span class="nav-number">7.1.</span> <span class="nav-text">发出第一个值或第一个通过给定表达式的值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例1-序列中的第一个值"><span class="nav-number">7.1.1.</span> <span class="nav-text">示例1:序列中的第一个值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例2-第一个通过predicate函数的值"><span class="nav-number">7.1.2.</span> <span class="nav-text">示例2:第一个通过predicate函数的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例3-使用可选的projection函数"><span class="nav-number">7.1.3.</span> <span class="nav-text">示例3:使用可选的projection函数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ignoreElements"><span class="nav-number">8.</span> <span class="nav-text">ignoreElements</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-ignoreElements-Observable"><span class="nav-number">8.0.0.1.</span> <span class="nav-text">函数签名: ignoreElements(): Observable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#忽略所有通知，除了complete和error"><span class="nav-number">8.1.</span> <span class="nav-text">忽略所有通知，除了complete和error</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#last"><span class="nav-number">9.</span> <span class="nav-text">last</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-last-predicate-function-Observable"><span class="nav-number">9.0.0.1.</span> <span class="nav-text">函数签名: last(predicate: function): Observable</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#sample"><span class="nav-number">10.</span> <span class="nav-text">sample</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-sample-sampler-Observable-Observable"><span class="nav-number">10.0.0.1.</span> <span class="nav-text">函数签名: sample(sampler: Observable): Observable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#当提供的observable发出时从源observable中取样"><span class="nav-number">10.1.</span> <span class="nav-text">当提供的observable发出时从源observable中取样</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注意：暂时搞不懂这个东西怎么用"><span class="nav-number">10.1.1.</span> <span class="nav-text">注意：暂时搞不懂这个东西怎么用</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#single"><span class="nav-number">11.</span> <span class="nav-text">single</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数签名-single-a-Function-Observable"><span class="nav-number">11.0.0.1.</span> <span class="nav-text">函数签名: single(a: Function): Observable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发出通过表达式的单一项"><span class="nav-number">11.1.</span> <span class="nav-text">发出通过表达式的单一项</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例-6"><span class="nav-number">11.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -844,6 +633,10 @@
   
 
   
+  <script type="text/javascript" src="/hexo/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/hexo/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
